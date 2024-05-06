@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <>
-      <StyledHero>
+      <StyledHero id="hero">
         <Container maxWidth={"lg"}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={5}>
@@ -33,7 +33,11 @@ const Hero = () => {
               <Typography variant="h2" textAlign="center">
                 Hi there, I'm Davi Aieta Carvalho 👋
               </Typography>
-              <Typography variant="h6" textAlign="center">
+              <Typography
+                variant="h6"
+                textAlign="center"
+                style={{ color: "#767676" }}
+              >
                 I'm a software developer student. A passionate about technology.
                 From Rio de Janeiro, Brasil 📍
               </Typography>

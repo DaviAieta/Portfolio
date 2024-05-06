@@ -14,9 +14,10 @@ const StyledButton: React.FC<StyledButtonProp> = ({ children, href }) => {
     padding: "5px 15px",
     width: "0%",
     textDecoration: "none",
-    color: "#5e5e5e",
+    color: "black",
+    transition: "color 0.3s",
     "&:hover": {
-      color: "black",
+      color: "#3a3a3a",
     },
     display: "inline-flex",
     alignItems: "center",
