@@ -12,6 +12,10 @@ const Footer = () => {
     alignItems: "center",
   }));
 
+  const StyledIcon = styled("span")({
+    fontSize: "25px",
+  });
+
   return (
     <>
       <StyledFooter id="contact">
@@ -24,7 +28,9 @@ const Footer = () => {
             </Grid>
             <Grid item xs={2}>
               <StyledButtonFooter href="https://github.com/DaviAieta">
-                <GitHubIcon />
+                <StyledIcon>
+                  <GitHubIcon />
+                </StyledIcon>
               </StyledButtonFooter>
               <StyledButtonFooter href="https://www.linkedin.com/in/davi-aieta/">
                 <LinkedInIcon />

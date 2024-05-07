@@ -8,17 +8,17 @@ const Navbar = () => {
     "& .MuiMenuItem-root": {
       margin: "0 -4px",
       fontSize: "19px",
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "Poppins, sans-serif",
       cursor: "pointer",
       transition: "color 0.3s",
     },
     "& .MuiMenuItem-root:hover": {
       backgroundColor: "white",
-      color: "#767676",
+      color: "#147EFB",
     },
   }));
 
-  const handleMenuItemClick = (id: string) => {
+  const itemClick = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -29,16 +29,10 @@ const Navbar = () => {
     <>
       <AppBar position="fixed" elevation={0}>
         <StyledTooBar>
-          <MenuItem onClick={() => handleMenuItemClick("hero")}>Home</MenuItem>
-          <MenuItem onClick={() => handleMenuItemClick("about")}>
-            About
-          </MenuItem>
-          <MenuItem onClick={() => handleMenuItemClick("projects")}>
-            Projects
-          </MenuItem>
-          <MenuItem onClick={() => handleMenuItemClick("contact")}>
-            Contact
-          </MenuItem>
+          <MenuItem onClick={() => itemClick("hero")}>Home</MenuItem>
+          <MenuItem onClick={() => itemClick("about")}>About</MenuItem>
+          <MenuItem onClick={() => itemClick("projects")}>Projects</MenuItem>
+          <MenuItem onClick={() => itemClick("contact")}>Contact</MenuItem>
         </StyledTooBar>
       </AppBar>
     </>

@@ -13,10 +13,12 @@ let theme = createTheme({
       main: "#f8f9f8",
     },
     secondary: {
-      main: "#000000",
+      main: "#147EFB",
     },
   },
-  typography: {},
+  typography: {
+    fontFamily: "Poppins, sans-serif",
+  },
 });
 
 theme = responsiveFontSizes(theme);

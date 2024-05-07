@@ -12,15 +12,13 @@ const StyledTextLink: React.FC<StyledTextLinkProp> = ({ children, href }) => {
     color: "#767676",
     transition: "color 0.3s",
     "&:hover": {
-      color: "#3a3a3a",
+      color: "#147EFB",
     },
   }));
 
   return (
     <>
-      <StyledTextLink href={href} target="_blank">
-        {children}
-      </StyledTextLink>
+      <StyledTextLink href={href}>{children}</StyledTextLink>
     </>
   );
 };

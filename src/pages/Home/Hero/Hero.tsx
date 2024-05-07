@@ -5,20 +5,34 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import StyledButton from "../../../components/StyledButton/StyledButton";
 
 const Hero = () => {
-  const StyledHero = styled("div")(() => ({
+  const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: "white",
     height: "80vh",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.up("xs")]: {
+      paddingTop: "100px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      paddingTop: "110px",
+    },
+    [theme.breakpoints.up("md")]: {
+      paddingTop: "0",
+    },
   }));
 
   const StyledImg = styled("img")(() => ({
     width: "80%",
     height: "auto",
     borderRadius: "50%",
-    border: "3px solid",
+    border: "5px solid",
     display: "flex",
     margin: "0 auto",
+    transform: "rotate(5deg)",
+    transition: "transform 1.6s",
+    "&:hover": {
+      transform: "rotate(360deg)",
+    },
   }));
 
   return (
@@ -26,10 +40,10 @@ const Hero = () => {
       <StyledHero id="hero">
         <Container maxWidth={"lg"}>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={5} sm={8}>
+            <Grid item xs={12} sm={6} md={6} lg={5}>
               <StyledImg src={Avatar} />
             </Grid>
-            <Grid item xs={12} md={7} sm={2}>
+            <Grid item xs={12} sm={6} md={6} lg={7}>
               <Typography
                 variant="h2"
                 textAlign="center"
@@ -43,7 +57,6 @@ const Hero = () => {
                 style={{ color: "#767676" }}
               >
                 I'm a software developer student. A passionate about technology.
-                From Rio de Janeiro, Brasil 📍
               </Typography>
               <Grid container display={"flex"} justifyContent={"center"}>
                 <Grid item xs={12} display={"flex"} justifyContent={"center"}>

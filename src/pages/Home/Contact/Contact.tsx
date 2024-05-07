@@ -15,14 +15,21 @@ const Contact = () => {
         <Container maxWidth={"lg"}>
           <Grid container spacing={1}>
             <Grid item xs={12}>
-              <Typography variant="h5">CONTACT</Typography>
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="h5">
-                Let's work together? Hit me up 👇
+              <Typography variant="h5" color="secondary">
+                CONTACT
               </Typography>
             </Grid>
-            <Grid item xs={3} style={{ marginTop: "30px" }}>
+            <Grid item xs={12}>
+              <Typography variant="h5">Let's work together? 👇</Typography>
+            </Grid>
+            <Grid
+              item
+              xs={6}
+              sm={6}
+              md={6}
+              lg={3}
+              style={{ marginTop: "30px" }}
+            >
               <Typography variant="h5">Location</Typography>
               <Typography
                 variant="h6"
@@ -31,7 +38,14 @@ const Contact = () => {
                 Salt Lake City, Utah
               </Typography>
             </Grid>
-            <Grid item xs={3} style={{ marginTop: "30px" }}>
+            <Grid
+              item
+              xs={6}
+              sm={6}
+              md={6}
+              lg={3}
+              style={{ marginTop: "30px" }}
+            >
               <Typography variant="h5">Mail</Typography>
               <Typography
                 variant="h6"
