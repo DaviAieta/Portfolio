@@ -3,7 +3,7 @@ import { styled, Grid, Container, Typography } from "@mui/material";
 const About = () => {
   const StyledAbout = styled("div")(() => ({
     backgroundColor: "white",
-    height: "80vh",
+    height: "60vh",
     display: "flex",
     alignItems: "center",
   }));
@@ -26,12 +26,12 @@ const About = () => {
                 textAlign="center"
                 style={{ marginTop: "5px" }}
               >
-                Software development student in Rio de Janeiro, Brazil 📍
+                Software development student
               </Typography>
               <Typography
                 variant="h6"
                 textAlign="center"
-                style={{ marginTop: "25px", color: "#767676" }}
+                style={{ marginTop: "20px", color: "#767676" }}
               >
                 Hey, my name is Davi Aieta Carvalho, I am a software development
                 student. My passion for software began when I was 13 years old.

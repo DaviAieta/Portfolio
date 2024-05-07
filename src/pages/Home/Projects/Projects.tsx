@@ -3,7 +3,7 @@ import { styled, Grid, Container, Typography } from "@mui/material";
 const Projects = () => {
   const StyledProjects = styled("div")(() => ({
     backgroundColor: "white",
-    height: "80vh",
+    height: "60vh",
     display: "flex",
     alignItems: "center",
   }));

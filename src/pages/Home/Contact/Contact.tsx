@@ -4,7 +4,7 @@ import StyledTextLink from "../../../components/StyledTextLink/StyledTextLink";
 const Contact = () => {
   const StyledContact = styled("div")(() => ({
     backgroundColor: "white",
-    height: "80vh",
+    height: "40vh",
     display: "flex",
     alignItems: "center",
   }));
