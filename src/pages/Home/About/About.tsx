@@ -1,11 +1,23 @@
 import { styled, Grid, Container, Typography } from "@mui/material";
 
 const About = () => {
-  const StyledAbout = styled("div")(() => ({
+  const StyledAbout = styled("div")(({ theme }) => ({
     backgroundColor: "white",
     height: "80vh",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.up("xs")]: {
+      height: "130vh",
+    },
+    [theme.breakpoints.up("sm")]: {
+      height: "100vh",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "100vh",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "80vh",
+    },
   }));
 
   const StyledImg = styled("img")(({ theme }) => ({

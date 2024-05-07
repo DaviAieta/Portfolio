@@ -1,11 +1,22 @@
 import { styled, Grid, Container, Typography } from "@mui/material";
 
 const Projects = () => {
-  const StyledProjects = styled("div")(() => ({
+  const StyledProjects = styled("div")(({ theme }) => ({
     backgroundColor: "white",
-    height: "80vh",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.up("xs")]: {
+      height: "50vh",
+    },
+    [theme.breakpoints.up("sm")]: {
+      height: "50vh",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "50vh",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "50vh",
+    },
   }));
 
   return (
@@ -13,7 +24,7 @@ const Projects = () => {
       <StyledProjects id="projects">
         <Container maxWidth={"lg"}>
           <Grid container spacing={2}>
-            <Grid item xs={12} textAlign={"center"}>
+            <Grid item xs={12} lg={12} marginBottom="60px" textAlign={"center"}>
               <Typography variant="h4">New projects coming soon..</Typography>
             </Grid>
           </Grid>

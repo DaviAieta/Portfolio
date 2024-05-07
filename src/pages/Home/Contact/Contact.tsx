@@ -2,11 +2,23 @@ import { styled, Grid, Container, Typography } from "@mui/material";
 import StyledTextLink from "../../../components/StyledTextLink/StyledTextLink";
 
 const Contact = () => {
-  const StyledContact = styled("div")(() => ({
+  const StyledContact = styled("div")(({ theme }) => ({
     backgroundColor: "white",
     height: "40vh",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.up("xs")]: {
+      height: "40vh",
+    },
+    [theme.breakpoints.up("sm")]: {
+      height: "40vh",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "40vh",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "40vh",
+    },
   }));
 
   return (
