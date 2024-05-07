@@ -3,7 +3,7 @@ import { styled, Grid, Container, Typography } from "@mui/material";
 const Projects = () => {
   const StyledProjects = styled("div")(() => ({
     backgroundColor: "white",
-    height: "30vh",
+    height: "80vh",
     display: "flex",
     alignItems: "center",
   }));
@@ -15,7 +15,7 @@ const Projects = () => {
           <Grid container spacing={2}>
             <Grid item xs={12} md={12}>
               <Typography variant="h4" textAlign={"center"}>
-                New projects coming soon.. 🫡
+                New projects coming soon..
               </Typography>
             </Grid>
           </Grid>

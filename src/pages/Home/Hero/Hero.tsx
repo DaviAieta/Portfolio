@@ -7,7 +7,7 @@ import StyledButton from "../../../components/StyledButton/StyledButton";
 const Hero = () => {
   const StyledHero = styled("div")(() => ({
     backgroundColor: "white",
-    height: "100vh",
+    height: "80vh",
     display: "flex",
     alignItems: "center",
   }));
@@ -26,16 +26,16 @@ const Hero = () => {
       <StyledHero id="hero">
         <Container maxWidth={"lg"}>
           <Grid container spacing={2}>
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={5} sm={8}>
               <StyledImg src={Avatar} />
             </Grid>
-            <Grid item xs={12} md={7}>
+            <Grid item xs={12} md={7} sm={2}>
               <Typography
                 variant="h2"
                 textAlign="center"
-                style={{ whiteSpace: "nowrap" }}
+                style={{ marginTop: "50px" }}
               >
-                Hey, I'm Davi Aieta Carvalho 👋
+                Hey, I'm Davi Aieta Carvalho 👋🏻
               </Typography>
               <Typography
                 variant="h6"
