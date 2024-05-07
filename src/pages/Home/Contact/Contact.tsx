@@ -1,7 +1,7 @@
 import { styled, Grid, Container, Typography } from "@mui/material";
 import StyledTextLink from "../../../components/StyledTextLink/StyledTextLink";
 
-const About = () => {
+const Contact = () => {
   const StyledContact = styled("div")(() => ({
     backgroundColor: "white",
     height: "80vh",
@@ -49,4 +49,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;
