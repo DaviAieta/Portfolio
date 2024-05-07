@@ -1,21 +1,35 @@
-import { styled, Grid, Container, Typography } from "@mui/material";
+import { styled, Grid, Container, Typography, Paper } from "@mui/material";
+import SchoolIcon from "@mui/icons-material/School";
 import AboutImage from "../../../assets/images/about.jpg";
 
 const About = () => {
   const StyledAbout = styled("div")(() => ({
     backgroundColor: "white",
-    height: "100vh",
+    height: "70vh",
     display: "flex",
     alignItems: "center",
   }));
 
-  const StyledImg = styled("img")(() => ({
-    width: "80%",
-    height: "auto",
-    borderRadius: "10%",
-    display: "block",
+  const StyledPaper = styled(Paper)(({ theme }) => ({
+    padding: theme.spacing(2),
+    textAlign: "center",
+    backgroundColor: "#ffffff",
+    borderRadius: "4px",
+    border: "1px solid #000000",
+    fontSize: "18px",
+    width: "250px",
     margin: "0 auto",
+    marginTop: "30px",
+    boxShadow: "none",
   }));
+
+  // const StyledImg = styled("img")(() => ("{"
+  //   width: "100%",
+  //   height: "auto",
+  //   borderRadius: "10%",
+  //   display: "block",
+  //   margin: "0 auto",
+  // }));
 
   return (
     <>
@@ -48,7 +62,9 @@ const About = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <StyledImg src={AboutImage} />
+              <StyledPaper>
+                <SchoolIcon />
+              </StyledPaper>
             </Grid>
           </Grid>
         </Container>

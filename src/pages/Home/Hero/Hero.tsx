@@ -30,8 +30,12 @@ const Hero = () => {
               <StyledImg src={Avatar} />
             </Grid>
             <Grid item xs={12} md={7}>
-              <Typography variant="h2" textAlign="center">
-                Hi there, I'm Davi Aieta Carvalho 👋
+              <Typography
+                variant="h2"
+                textAlign="center"
+                style={{ whiteSpace: "nowrap" }}
+              >
+                Hey, I'm Davi Aieta Carvalho 👋
               </Typography>
               <Typography
                 variant="h6"

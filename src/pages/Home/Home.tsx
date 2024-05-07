@@ -1,6 +1,7 @@
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Navbar from "../../components/Navbar/Navbar";
+import Projects from "./Projects/Projects";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
+      <Projects />
     </>
   );
 };

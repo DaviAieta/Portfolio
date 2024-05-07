@@ -33,7 +33,9 @@ const Navbar = () => {
           <MenuItem onClick={() => handleMenuItemClick("about")}>
             About
           </MenuItem>
-          <MenuItem>Projects</MenuItem>
+          <MenuItem onClick={() => handleMenuItemClick("projects")}>
+            Projects
+          </MenuItem>
           <MenuItem>Contact</MenuItem>
         </StyledTooBar>
       </AppBar>
